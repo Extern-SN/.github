@@ -1,0 +1,53 @@
+name: Bug
+description: Comportement incorrect constaté
+labels: ["bug"]
+body:
+  - type: textarea
+    id: constat
+    attributes:
+      label: Constat
+      description: Ce qui se passe, et ce qui devrait se passer.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Environnement (dev, prod), étapes, données de test. Pas de donnée personnelle réelle.
+      value: |
+        1.
+        2.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Qui est touché, depuis quand, combien de cas.
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes techniques
+      description: Logs, fichiers suspectés, pistes.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: taille
+    attributes:
+      label: Taille
+      description: Temps total estimé de la correction, si on peut déjà le dire.
+      options:
+        - XS (moins d'1 h)
+        - S (1 à 3 h)
+        - M (une demi-journée à une journée)
+        - L (1 à 3 jours)
+        - XL (3 à 5 jours)
+        - XXL (plus de 5 jours)
+    validations:
+      required: false

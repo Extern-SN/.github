@@ -1,0 +1,40 @@
+name: Constat d'audit
+description: Écart relevé lors d'un audit (sécurité, infrastructure, conformité)
+labels: ["audit"]
+body:
+  - type: dropdown
+    id: priorite
+    attributes:
+      label: Priorité
+      options:
+        - Critique
+        - Élevée
+        - Moyenne
+        - Faible
+    validations:
+      required: true
+
+  - type: textarea
+    id: constat
+    attributes:
+      label: Constat
+      description: Ce qui a été observé, avec la preuve (commande, extrait, capture). Aucun secret en clair.
+    validations:
+      required: true
+
+  - type: textarea
+    id: risque
+    attributes:
+      label: Risque
+      description: Ce qui peut arriver si rien n'est fait.
+    validations:
+      required: true
+
+  - type: textarea
+    id: remediation
+    attributes:
+      label: Remédiation proposée
+      value: |
+        - [ ]
+    validations:
+      required: false
