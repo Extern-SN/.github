@@ -2,6 +2,15 @@ name: Constat d'audit
 description: Écart relevé lors d'un audit (sécurité, infrastructure, conformité)
 labels: ["audit"]
 body:
+  - type: input
+    id: reference
+    attributes:
+      label: Référence d'origine
+      description: Audit d'origine (nom et date) ou ticket GLPI, tâche Odoo associés.
+      placeholder: glpi-1234, odoo-2099 ou client
+    validations:
+      required: false
+
   - type: dropdown
     id: priorite
     attributes:
