@@ -1,7 +1,7 @@
 name: Release Tag
 
 # Crée le tag SemVer au merge sur main, selon le label de la PR fusionnée,
-# puis déclenche le workflow de build de l'image.
+# puis déclenche deploy-prod.yml, qui publie l'image de production.
 
 on:
   push:
@@ -20,5 +20,5 @@ jobs:
     uses: Extern-SN/github-workflows/.github/workflows/release-tag.yml@v1
     with:
       changelog-file: CHANGELOG.md
-      docker-workflow-file: docker-build.yml
+      docker-workflow-file: deploy-prod.yml
       sync-branch: dev
