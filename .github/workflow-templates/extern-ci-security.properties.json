@@ -1,0 +1,8 @@
+{
+  "name": "Extern : sécurité des workflows",
+  "description": "zizmor, actionlint et shellcheck sur les workflows du dépôt (kit github-workflows).",
+  "iconName": "shield-check",
+  "categories": [
+    "Security"
+  ]
+}

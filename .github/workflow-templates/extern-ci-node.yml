@@ -1,0 +1,25 @@
+name: CI
+
+# Lint et tests sur toute branche, sans build ni déploiement.
+# Ajuster les versions et commandes à celles du projet.
+
+on:
+  pull_request:
+    paths-ignore: ['**/*.md', 'docs/**']
+  push:
+    branches: [main, dev]
+    paths-ignore: ['**/*.md', 'docs/**']
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    uses: Extern-SN/github-workflows/.github/workflows/js-tests.yml@v1
+    with:
+      node-version: '22'
+      test-command: 'npm test'

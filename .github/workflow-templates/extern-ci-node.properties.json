@@ -1,0 +1,10 @@
+{
+  "name": "Extern : CI Node",
+  "description": "Installation npm et tests JavaScript (kit github-workflows).",
+  "iconName": "beaker",
+  "categories": [
+    "Continuous integration",
+    "JavaScript",
+    "TypeScript"
+  ]
+}

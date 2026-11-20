@@ -1,0 +1,24 @@
+name: Release Tag
+
+# Crée le tag SemVer au merge sur main, selon le label de la PR fusionnée,
+# puis déclenche le workflow de build de l'image.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['CHANGELOG.md']
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    permissions:
+      contents: write
+      pull-requests: read
+      actions: write
+    uses: Extern-SN/github-workflows/.github/workflows/release-tag.yml@v1
+    with:
+      changelog-file: CHANGELOG.md
+      docker-workflow-file: docker-build.yml
+      sync-branch: dev

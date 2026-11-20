@@ -1,0 +1,9 @@
+{
+  "name": "Extern : CI Python",
+  "description": "Lint et tests Python (kit github-workflows).",
+  "iconName": "beaker",
+  "categories": [
+    "Continuous integration",
+    "Python"
+  ]
+}

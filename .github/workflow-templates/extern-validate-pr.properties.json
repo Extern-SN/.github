@@ -1,0 +1,8 @@
+{
+  "name": "Extern : validation des PR",
+  "description": "Label de version posé depuis la branche, nommage et label unique vérifiés (kit github-workflows).",
+  "iconName": "git-pull-request",
+  "categories": [
+    "Automation"
+  ]
+}

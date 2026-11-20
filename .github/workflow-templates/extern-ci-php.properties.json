@@ -1,0 +1,9 @@
+{
+  "name": "Extern : CI PHP",
+  "description": "Installation Composer et tests PHP (kit github-workflows).",
+  "iconName": "beaker",
+  "categories": [
+    "Continuous integration",
+    "PHP"
+  ]
+}

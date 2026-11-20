@@ -16,6 +16,8 @@ Le modèle de PR (`pull_request_template.md`) rappelle les règles vérifiées p
 
 `CONTRIBUTING.md` et `SECURITY.md` servent de défaut de la même façon.
 
+`.github/workflow-templates/` propose des workflows d'amorce dans l'onglet Actions de chaque dépôt (« New workflow », section de l'organisation). Ils ne font qu'appeler le kit `Extern-SN/github-workflows` au tag `v1` : validation des PR, tag de version, sécurité des workflows, CI PHP, Node ou Python. Un workflow créé ainsi est une copie, il ne suit pas les évolutions de l'amorce.
+
 Un label posé par un formulaire n'est appliqué que s'il existe à la fois dans ce dépôt et dans le dépôt cible. Les issues créées par `gh issue create --body` ne passent pas par ces formulaires.
 
 Ce dépôt est public, condition imposée par GitHub pour que les modèles d'issue s'appliquent à toute l'organisation. N'y mettre aucune information interne.

@@ -1,0 +1,17 @@
+name: CI Security
+
+# Analyse des workflows du dépôt (zizmor, actionlint, shellcheck).
+
+on:
+  pull_request:
+    paths: ['.github/workflows/**', 'zizmor.yml']
+  push:
+    branches: [main, dev]
+    paths: ['.github/workflows/**', 'zizmor.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  security:
+    uses: Extern-SN/github-workflows/.github/workflows/ci-security.yml@v1

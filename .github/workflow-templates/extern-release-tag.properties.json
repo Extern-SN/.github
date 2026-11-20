@@ -1,0 +1,8 @@
+{
+  "name": "Extern : tag de version",
+  "description": "Tag SemVer au merge sur main selon le label de la PR, puis build de l'image (kit github-workflows).",
+  "iconName": "tag",
+  "categories": [
+    "Automation"
+  ]
+}
