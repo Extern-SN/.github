@@ -1,6 +1,7 @@
 name: Bug
 description: Comportement incorrect constaté
 labels: ["bug"]
+type: Bug
 body:
   - type: input
     id: reference

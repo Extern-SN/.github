@@ -1,6 +1,7 @@
 name: Constat d'audit
 description: Écart relevé lors d'un audit (sécurité, infrastructure, conformité)
 labels: ["audit"]
+type: Task
 body:
   - type: input
     id: reference

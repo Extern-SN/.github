@@ -1,6 +1,7 @@
 name: Tâche
 description: Développement chiffré
 labels: ["feature"]
+type: Task
 body:
   - type: input
     id: reference
