@@ -10,6 +10,8 @@ GitHub les applique à tout dépôt de l'organisation qui n'a pas son propre dos
 | Bug | `bug` | Comportement incorrect constaté |
 | Constat d'audit | `audit` | Écart relevé lors d'un audit |
 
+Chaque formulaire commence par un champ "Référence d'origine" (ticket GLPI, tâche Odoo ou client), facultatif : une demande interne sans référence prend l'issue elle-même comme référence.
+
 Le modèle de PR (`pull_request_template.md`) rappelle les règles vérifiées par `validate-pr` dans les dépôts qui l'appellent : branche `feature/`, `fix/` ou `hotfix/`, et un seul label de version. Comme pour chaque fichier commun, un dépôt qui a le sien le garde.
 
 `CONTRIBUTING.md` et `SECURITY.md` servent de défaut de la même façon.

@@ -2,6 +2,15 @@ name: Bug
 description: Comportement incorrect constaté
 labels: ["bug"]
 body:
+  - type: input
+    id: reference
+    attributes:
+      label: Référence d'origine
+      description: Ticket GLPI ou tâche Odoo qui signale le bug, ou client concerné. Vide si le bug est constaté en interne.
+      placeholder: glpi-1234, odoo-2099 ou client
+    validations:
+      required: false
+
   - type: textarea
     id: constat
     attributes:

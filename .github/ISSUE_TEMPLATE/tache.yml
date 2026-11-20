@@ -2,6 +2,15 @@ name: Tâche
 description: Développement chiffré
 labels: ["feature"]
 body:
+  - type: input
+    id: reference
+    attributes:
+      label: Référence d'origine
+      description: Ticket GLPI, tâche Odoo ou client à l'origine de la demande. Vide si la demande est interne (l'issue sert alors de référence).
+      placeholder: glpi-1234, odoo-2099 ou client
+    validations:
+      required: false
+
   - type: dropdown
     id: taille
     attributes:
